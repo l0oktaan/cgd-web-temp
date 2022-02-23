@@ -34,24 +34,26 @@ main {
 
 main .topbar{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     height: 80px;
+    
     align-items: center;
     background: #ffffff;
     margin-top: 10px;
     margin-left: 20px;
 }
 main .topbar .logo{
-    position: absolute;
-    top:0;
-    left: 0;
+    
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
     background: #3B5999;
     border-radius: 0 0 80px;
-    
+    padding: 0px;
+    transform: translate(-25px, -5px)
+
 }
 /* main .topbar .logo::before{
     content: '';		
@@ -82,7 +84,27 @@ main .topbar .logo small{
     font-size: 0.8em;
     font-weight: 300;
 }
-
+main .topbar .navi{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    color: #000;
+    margin-right: 10px;
+}
+main .topbar .navi img{
+    width: 30px;
+}
+main .topbar .navi i{
+    font-size: 1.5em;
+    line-height: 30px;
+    margin-bottom: 3px;
+    color: rgb(255, 72, 0);
+}
+main .topbar .navi a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+}
 main .banner{
     display: flex;
     justify-content:space-around;
@@ -91,22 +113,37 @@ main .banner{
     background: #ffffff;
 }
 main .banner .construct-text{
-    display: flex;		
-    flex-direction: column;
-    margin: 20px;
+    display: grid;    
+    grid-auto-rows: 1fr;
+    grid-template-columns: 120px auto;
+        
     
 }
+main .banner .construct-text .icon1{
+    color: #eecc0b;
+    font-size: 5em;
+}
+/* main .banner .construct-text::before{
+    content: '';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f807";
+} */
+main .banner .construct-text .text-construct{
+    display: flex;
+    flex-direction: column;
+}
 
-main .banner .construct-text h1{
+main .banner .construct-text .text-construct h1{
     font-size: 2.5em;
     font-weight: 600;
     text-align: left;
 }
-main .banner .construct-text h2{
+main .banner .construct-text .text-construct h2{
     font-size: 1.8em;
     text-align: left;
     font-weight: 300;
-    line-height: 80px;
+    line-height: 55px;
 }
 main .banner .construct-image img{
     max-width: calc(100% - 250px);
@@ -117,8 +154,14 @@ main .banner .construct-image img{
 main .pagelink{
     display: flex;
     flex-direction: column;
-    background: rgb(2,0,36);
-background: linear-gradient(133deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 40%, rgb(0, 119, 255) 100%);
+    /* background: rgb(2,0,36);
+    background: rgb(4,104,168);
+    background: rgb(65,84,159);
+    background: rgb(65,84,159);
+    background: linear-gradient(133deg, rgba(65,84,159,1) 0%, rgba(65,84,159,1) 46%, rgba(64,102,250,1) 50%, rgba(64,102,250,1) 100%); */
+    /* background-image: url('img/bg.jpg'); */
+    background-image: linear-gradient(to left top, #0083e3, #0098ec, #00acf1, #00bef3, #32d0f4, #38caec, #3dc4e5, #41bedd, #21a0ca, #0083b4, #00669d, #024a83);
+    background-size: 100% 100%;
     justify-content: center;
     text-align: center;
     padding-top: 20px;
@@ -127,6 +170,7 @@ background: linear-gradient(133deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 40%, rgb(
 main .pagelink h3{
     font-size: 1.5em;
     color: #fff;
+    font-weight: 500;
 }
 main .pagelink .container{
     display: flex;
@@ -221,9 +265,9 @@ main .pagelink .container .search .searchTerm {
     overflow: hidden;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 5px 3px 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 3px 10px rgba(24, 24, 24, 0.3);
     backdrop-filter: blur(5px);
-    color: rgb(255, 255, 255);
+    color: rgb(0, 2, 148);
     padding: 15px;
     border-radius: 5px;
     /* border: 0.5px solid #eee; */
@@ -238,7 +282,7 @@ main .pagelink .container .search .searchTerm {
 }
 .item:hover{
     background: rgb(255, 255, 255,0.8);
-    color: rgba(2,0,36,1);
+    
     box-shadow: 0 3px 10px rgba(255, 255, 255, 0.8);
     transform: translate(5px, -5px);
     transition: 0.3s;
@@ -273,7 +317,7 @@ main .footer .social .icon span{
     display: block;
     height: 60px;
     width: 60px;
-    background: #14183a;
+    
     border-radius: 50%;
     position: relative;
     z-index: 2;
@@ -286,28 +330,33 @@ main .footer .social .icon span i{
     line-height: 60px;
     font-size: 25px;
 }
-main .footer .social .facebook:hover span {
-    transition: 0.3s;
-    transform: translate(0px, -5px);
+main .footer .social .facebook span {
+    
+    
     background: #3B5999;
-    box-shadow: 0px 5px 5px rgba(0,0,0,0.4);
+    
 }
-main .footer .social .twitter:hover span {
-    transition: 0.3s;
-    transform: translate(0px, -5px);
+main .footer .social .twitter span {
+    
+    
     background: #46C1F6;
-    box-shadow: 0px 5px 5px rgba(0,0,0,0.4);
+    
 }
-main .footer .social .instagram:hover span {
-    transition: 0.3s;
-    transform: translate(0px, -5px);
+main .footer .social .instagram span {
+    
+    
     background: #e1306c;
-    box-shadow: 0px 5px 5px rgba(0,0,0,0.4);
+    
 }
-main .footer .social .youtube:hover span {
-    transition: 0.3s;
-    transform: translate(0px, -5px);
+main .footer .social .youtube span {
+    
+    
     background: #DE463B;
+    
+}
+main .footer .social .icon:hover span {
+    transition: 0.3s;
+    transform: translate(0px, -5px);    
     box-shadow: 0px 5px 5px rgba(0,0,0,0.4);
 }
 
@@ -340,9 +389,7 @@ main .footer .social .youtube:hover span {
         margin-top: 20px;
     }
     
-    main .topbar .navi{
-        display: none;
-    }
+    
     /* main .topbar .logo::before{
         content: '';		
         position: absolute;

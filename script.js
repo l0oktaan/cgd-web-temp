@@ -6,6 +6,30 @@ const linkStore = [
       url: 'http://epayroll.cgd.go.th/CGDREG/CGDWEB/index.jsp'
     },
     {
+      id: 4,
+      icon: '',
+      text: 'ระบบบำเหน็จบำนาญและสวัสดิการรักษาพยาบาล (Digital Pension)',
+      url: 'https://dps.cgd.go.th/efiling-pension'
+    },
+    {
+      id: 7,
+      icon: '',
+      text: 'ระบบตรวจสอบสิทธิรักษาพยาบาล',
+      url: 'https://mbdb.cgd.go.th/wel/'
+    },
+    {
+      id: 10,
+      icon: '',
+      text: 'รายชื่อสถานพยาบาลเอกชน กรณีนัดผ่าตัดล่วงหน้า',
+      url: 'https://mbdb.cgd.go.th/wel/searchsgr.jsp'
+    },
+    {
+      id: 13,
+      icon: '',
+      text: 'บัญชีรายการและรหัสมาตรฐานการตรวจทางห้องปฏิบัติการ',
+      url: 'https://www.this.or.th/tllcgd.php'
+    },
+    {
       id: 2,
       icon: '',
       text: 'ระบบบริหารการเงินการคลังภาครัฐ (GFMIS)',
@@ -17,47 +41,12 @@ const linkStore = [
       text: 'ระบบการจัดซื้อจัดจ้างภาครัฐ (e-GP​)',
       url: 'http://www.gprocurement.go.th'
     },
-    {
-      id: 4,
-      icon: '',
-      text: 'ระบบบำเหน็จบำนาญและสวัสดิการรักษาพยาบาล (Digital Pension)',
-      url: 'https://dps.cgd.go.th/efiling-pension'
-    },
+    
     {
       id: 5,
       icon: '',
       text: 'ระบบบริหารงบประมาณ (AFMIS)',
       url: 'https://afmis.cgd.go.th/afmis'
-    },
-    {
-      id: 6,
-      icon: '',
-      text: 'ระบบฐานข้อมูลงานตรวจสอบภายในภาครัฐแบบอิเล็กทรอนิกส์',
-      url: 'https://iais.cgd.go.th/login'
-    },
-    {
-      id: 7,
-      icon: '',
-      text: 'ระบบตรวจสอบสิทธิรักษาพยาบาล',
-      url: 'https://mbdb.cgd.go.th/wel/'
-    },
-    {
-      id: 8,
-      icon: '',
-      text: 'ระบบความรับผิดทางละเมิดและแพ่ง',
-      url: 'https://tcls.cgd.go.th'
-    },
-    {
-      id: 9,
-      icon: '',
-      text: 'ระบบบริหารจัดการเงินนอกงบประมาณ',
-      url: 'https://nbms.cgd.go.th'
-    },
-    {
-      id: 10,
-      icon: '',
-      text: 'รายชื่อสถานพยาบาลเอกชน กรณีนัดผ่าตัดล่วงหน้า',
-      url: 'https://mbdb.cgd.go.th/wel/searchsgr.jsp'
     },
     {
       id: 11,
@@ -66,16 +55,33 @@ const linkStore = [
       url: 'https://dims.cgd.go.th/Dims/login.jsf'
     },
     {
+      id: 6,
+      icon: '',
+      text: 'ระบบฐานข้อมูลงานตรวจสอบภายในภาครัฐแบบอิเล็กทรอนิกส์',
+      url: 'https://iais.cgd.go.th/login'
+    },
+    
+    
+    {
+      id: 9,
+      icon: '',
+      text: 'ระบบบริหารจัดการเงินนอกงบประมาณ',
+      url: 'https://nbms.cgd.go.th'
+    },
+    
+    
+    {
       id: 12,
       icon: '',
       text: 'ระบบลงทะเบียนฝึกอบรม',
       url: 'http://e-reg.cgd.go.th/cgdr'
     },
+    
     {
-      id: 13,
+      id: 8,
       icon: '',
-      text: 'บัญชีรายการและรหัสมาตรฐานการตรวจทางห้องปฏิบัติการ',
-      url: 'hhttp://www.this.or.th/tllcgd.php'
+      text: 'ระบบความรับผิดทางละเมิดและแพ่ง',
+      url: 'https://tcls.cgd.go.th'
     },
     {
       id: 14,
