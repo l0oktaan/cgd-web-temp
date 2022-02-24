@@ -333,6 +333,11 @@ main .footer .social .icon span i{
     line-height: 60px;
     font-size: 25px;
 }
+
+main .footer .social .icon span a{
+    color: #fff;
+    text-decoration: none;
+}
 main .footer .social .facebook span {
     
     
