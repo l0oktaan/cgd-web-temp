@@ -117,9 +117,7 @@ searchInput.addEventListener("input", e => {
     })
   })
 
-function toclick(){
-    console.log('click')
-}
+
 function bindData(showData){
     return showData.map(link => {
         
