@@ -48,6 +48,7 @@ main .topbar .logo{
     display: flex;
     flex-direction: row;
     justify-content: left;
+    flex-wrap: wrap;
     align-items: center;
     background: #3B5999;
     border-radius: 0 0 80px;
@@ -111,10 +112,14 @@ main .topbar .navi a{
 main .banner{
     display: flex;
     justify-content:space-around;
-    height: 350px;
+    /* height: auto; */
     align-items: center;
     background: #ffffff;
 }
+main .banner .mail{
+    display: none;
+}
+
 main .banner .construct-text{
     display: grid;    
     grid-auto-rows: 1fr;
@@ -136,20 +141,23 @@ main .banner .construct-text .text-construct{
     display: flex;
     flex-direction: column;
 }
-
-main .banner .construct-text .text-construct h1{
-    font-size: 2.5em;
-    font-weight: 600;
+main .banner .construct-text .text-construct .head-th{
+    font-size: 1.9em;
     text-align: left;
+    font-weight: bold;
+    line-height: 55px;
+    
 }
-main .banner .construct-text .text-construct h2{
+
+main .banner .construct-text .text-construct .head-eng{
     font-size: 1.8em;
     text-align: left;
-    font-weight: 300;
-    line-height: 55px;
+    font-weight: bold;
+    line-height: 52px;
+    opacity: 00.8;
 }
 main .banner .construct-image img{
-    max-width: calc(100% - 250px);
+    max-width: calc(100% - 300px);
     margin: 30px 30px 30px;
 
 }
@@ -261,7 +269,7 @@ main .pagelink .container .search .searchTerm {
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    width: 280px;
+    width: 300px;
     height: 80px;
     margin: 20px;
     background: rgb(255, 255, 255,0.3);
@@ -270,7 +278,7 @@ main .pagelink .container .search .searchTerm {
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 5px 3px 10px rgba(24, 24, 24, 0.3);
     backdrop-filter: blur(5px);
-    color: rgb(0, 2, 148);
+    color: rgb(26, 26, 26);
     padding: 15px;
     border-radius: 5px;
     /* border: 0.5px solid #eee; */
@@ -281,11 +289,12 @@ main .pagelink .container .search .searchTerm {
     
 }
 .item p{
+    font-size: 1em;
     font-weight: 500;
 }
 .item:hover{
     background: rgb(255, 255, 255,0.8);
-    
+    color: #003bbb;
     box-shadow: 0 3px 10px rgba(255, 255, 255, 0.8);
     transform: translate(5px, -5px);
     transition: 0.3s;
@@ -372,32 +381,82 @@ main .footer .social .icon:hover span {
     main {
         max-width: none;
     }
-    main .banner .construct-text h1{
-        font-size: 1.8em;
-        font-weight: 400;
-        text-align: left;
+    main .banner{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        margin-top: 35px;
+        padding: 0;
+        /* height: 400px; */
+        
     }
-    main .banner .construct-text h2{
-        font-size: 1.2em;
-        text-align: left;
-        font-weight: 100;
-        line-height: 80px;
+    main .banner .construct-text .text-construct .head-eng{
+        font-size: 1.5em;
+        
+    }
+    main .banner .construct-text .text-construct .head-th{
+        font-size: 1.3em;
+        
     }
     main .banner .construct-image img{
-        display: none;
+        /* height: 450px; */
+        margin: 0;
+        /* display: none; */
 
+    }
+    main .banner .mail{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        
+        margin-right: 50px;
+        background-color: #fff;
+        width: 100vw;
+        border-bottom: 1px solid rgb(124, 124, 124);
+        
+    }
+    main .banner .mail img{
+        width: 30px;
+        text-align: center;
+    }
+    main .banner .mail i{
+        font-size: 1.5em;
+        line-height: 30px;
+        margin-bottom: 3px;
+        color: rgb(255, 72, 0);
+    }
+    main .banner .mail a{
+        margin-left: 30px;
+        text-decoration: none;
+        color: rgb(0, 88, 122);
     }
     main .topbar{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         height: 65px;
+        width: 100%;
         align-items: center;
         background: #ffffff;
-        margin: 5px;
-        margin-top: 20px;
+        margin: 0px;
+        margin-top: 0px;
+
     }
     
-    
+    main .topbar .logo{
+        border-radius: 0px;
+        width: 100%;
+        min-width: 600px;
+        margin: 0;
+        padding: 0;
+        transform: translate(0);
+        
+    }
+    main .topbar .navi{
+        display: none;
+
+    }
     /* main .topbar .logo::before{
         content: '';		
         position: absolute;

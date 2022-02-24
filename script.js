@@ -2,13 +2,13 @@ const linkStore = [
     {
       id: 1,
       icon: '',
-      text: 'ระบบจ่ายตรงเงินเดือน',
+      text: 'ระบบจ่ายตรงเงินเดือน\r\nของกรมบัญชีกลาง ',
       url: 'http://epayroll.cgd.go.th/CGDREG/CGDWEB/index.jsp'
     },
     {
       id: 4,
       icon: '',
-      text: 'ระบบบำเหน็จบำนาญและสวัสดิการรักษาพยาบาล (Digital Pension)',
+      text: 'ระบบบำเหน็จบำนาญและสวัสดิการ\r\nรักษาพยาบาล (Digital Pension)',
       url: 'https://dps.cgd.go.th/efiling-pension'
     },
     {
@@ -20,44 +20,55 @@ const linkStore = [
     {
       id: 10,
       icon: '',
-      text: 'รายชื่อสถานพยาบาลเอกชน กรณีนัดผ่าตัดล่วงหน้า',
+      text: 'รายชื่อสถานพยาบาลเอกชน\r\nกรณีนัดผ่าตัดล่วงหน้า',
       url: 'https://mbdb.cgd.go.th/wel/searchsgr.jsp'
     },
     {
       id: 13,
       icon: '',
-      text: 'บัญชีรายการและรหัสมาตรฐานการตรวจทางห้องปฏิบัติการ',
+      text: 'บัญชีรายการและรหัสมาตรฐาน\r\nการตรวจทางห้องปฏิบัติการ',
       url: 'https://www.this.or.th/tllcgd.php'
     },
     {
       id: 2,
       icon: '',
-      text: 'ระบบบริหารการเงินการคลังภาครัฐ (GFMIS)',
+      text: 'ระบบบริหารการเงินการคลังภาครัฐ\r\n(GFMIS)',
       url: 'http://www.gfmis.go.th/'
     },
     {
       id: 3,
       icon: '',
-      text: 'ระบบการจัดซื้อจัดจ้างภาครัฐ (e-GP​)',
+      text: 'ระบบการจัดซื้อจัดจ้างภาครัฐ\r\n(e-GP​)',
       url: 'http://www.gprocurement.go.th'
     },
-    
+    {
+      id: 15,
+      icon: '',
+      text: 'ระบบบูรณาการฐานข้อมูลสวัสดิการสังคม\r\n(e-Social Welfare)',
+      url: 'https://govwelfare.cgd.go.th/welfare/home'
+    },
+    {
+      id: 16,
+      icon: '',
+      text: 'ระบบการรับชำระเงินกลางของบริการภาครัฐ\r\n(e-Payment)',
+      url: 'https://epayment.cgd.go.th/e-payment/home'
+    },
     {
       id: 5,
       icon: '',
-      text: 'ระบบบริหารงบประมาณ (AFMIS)',
+      text: 'ระบบบริหารงบประมาณ\r\n(AFMIS)',
       url: 'https://afmis.cgd.go.th/afmis'
     },
     {
       id: 11,
       icon: '',
-      text: 'ระบบฐานข้อมูลการใช้จ่ายเงินทดรองราชการฯ (DIMS)',
+      text: 'ระบบฐานข้อมูลการใช้จ่ายเงินทดรองราชการฯ\r\n(DIMS)',
       url: 'https://dims.cgd.go.th/Dims/login.jsf'
     },
     {
       id: 6,
       icon: '',
-      text: 'ระบบฐานข้อมูลงานตรวจสอบภายในภาครัฐแบบอิเล็กทรอนิกส์',
+      text: 'ระบบฐานข้อมูลงานตรวจสอบภายในภาครัฐ\r\nแบบอิเล็กทรอนิกส์',
       url: 'https://iais.cgd.go.th/login'
     },
     
@@ -126,6 +137,7 @@ function bindData(showData){
         const text = card.querySelector("[data-text]")
         const url = card.querySelector("[data-url]")
         // const item = card.querySelector("[data-item]")
+        text.setAttribute('style', 'white-space: pre;');
         text.textContent = link.text
         url.link = link.url  
         card.addEventListener("mouseup",()=>{
