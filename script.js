@@ -81,12 +81,7 @@ const linkStore = [
     },
     
     
-    {
-      id: 12,
-      icon: '',
-      text: 'ระบบลงทะเบียนฝึกอบรม',
-      url: 'http://e-reg.cgd.go.th/cgdr'
-    },
+    
     
     {
       id: 8,
@@ -99,6 +94,12 @@ const linkStore = [
       icon: '',
       text: 'ระบบสารสนเทศกฎหมาย',
       url: 'https://saraban-law.cgd.go.th/CGDWeb/index.jsp'
+    },
+    {
+      id: 12,
+      icon: '',
+      text: 'ระบบลงทะเบียนฝึกอบรม',
+      url: 'http://e-reg.cgd.go.th/cgdr'
     },
 ]
 
